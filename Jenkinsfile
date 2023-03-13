@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Secure Copy') {
             steps {
-                sh 'sudo scp /var/lib/jenkins/workspace/Muiltibranch_Pipeline-Mini_test/webapp/target/webapps.war /opt/mytomcat/apache-tomcat-10.1.6/MultiB-pipeline-warfile'
+                sh 'sudo scp /var/lib/jenkins/workspace/Muiltibranch_Pipeline-Mini_dev/webapp/target/webapp.war /opt/mytomcat/apache-tomcat-10.1.6/MultiB-pipeline-warfile'
            }
             
         }
